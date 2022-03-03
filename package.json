@@ -1,25 +1,37 @@
 {
-    "name": "ginfuru-nunjucks",
-    "displayName": "Nunjucks",
-    "description": "Nunjucks syntax highlighting + snippets",
-    "version": "0.0.1",
-    "engines": {
-        "vscode": "^1.64.0"
-    },
-    "categories": [
-        "Programming Languages"
+  "name": "ginfuru-nunjucks",
+  "displayName": "Better Nunjucks",
+  "description": "Better Nunjucks Syntax Highlighting Support with Snippets",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.64.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "nunjucks",
+        "aliases": [
+          "Better Nunjucks Syntax Support",
+          "nunjucks"
+        ],
+        "extensions": [
+          ".njk",
+          ".nunjucks",
+          ".html",
+          ".md"
+        ],
+        "configuration": "./src/language/nunjucks.language-configuration.json"
+      }
     ],
-    "contributes": {
-        "languages": [{
-            "id": "nunjucks",
-            "aliases": ["Better Nunjucks Syntax Support", "nunjucks"],
-            "extensions": [".njk",".nunjucks",".html",".md"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "nunjucks",
-            "scopeName": "source.njk",
-            "path": "./syntaxes/nunjucks.tmLanguage.json"
-        }]
-    }
+    "grammars": [
+      {
+        "language": "nunjucks",
+        "scopeName": "source.njk",
+        "path": "./src/syntaxes/nunjucks.tmLanguage.json"
+      }
+    ]
+  }
 }
