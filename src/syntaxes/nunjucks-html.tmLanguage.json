@@ -1,1 +1,14 @@
-{}
+{
+  "name": "Nunjucks Html",
+  "scopeName": "text.html.njk",
+  "comment": "Nunjucks Template",
+  "fileTypes": ["njk", "html"],
+  "patterns": [
+    {
+      "include": "source.njk"
+    },
+    {
+      "include": "text.html.basic"
+    }
+  ]
+}
