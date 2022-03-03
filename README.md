@@ -61,7 +61,7 @@ One "gotcha" is code folding support. You will need to include the below to enab
 "editor.foldingStrategy": "indentation"
 ```
 
-![cold folding](./images/nunjucks-code-folding.gif)
+![cold folding](./images/nunjucks-code-folding.mp4)
 
 
 
