@@ -7,23 +7,24 @@ All `.njk` files will default to `html` and provide syntax highlighting for Nunj
 <br>
 <br>
 
-| ![nunjucks inside of markdown](./images/nunjucks-in-markdown.png) |
+
+| ![nunjucks-snippets-in-markdown](https://user-images.githubusercontent.com/402910/156658780-99618c38-6cc6-4162-9716-c8ab0a69e961.png) |
 |:--:|
 | <strong>Nunjucks inside of Markdown + frontmatter support</strong>|
 
-| ![complex example of nunjucks in html](./images/nunjucks-complex-page.png) |
+| ![nunjucks-complex-page](https://user-images.githubusercontent.com/402910/156658807-af533204-1ad0-49cb-b361-6339b0e9cb34.png) |
 |:--:|
 | <strong>Complex example of Nunjucks inside of HTML + frontmatter support</strong>|
 
-| ![basic nunjucks in a html file](./images/nunjucks-in-html.png) |
+| ![nunjucks-in-html](https://user-images.githubusercontent.com/402910/156658892-40e2995a-6386-4391-a0c7-d75043d969c4.png) |
 |:--:|
 | <strong>Nunjucks inside of HTML + frontmatter support</strong>|
 
-| ![nunjucks with 11ty](./images/nunjucks-with-11ty.png) |
+| ![nunjucks-with-11ty](https://user-images.githubusercontent.com/402910/156658922-e2afb26d-ed2f-453a-a744-541d13bc339d.png) |
 |:--:|
 | <strong>Using Nunjucks with Eleventy + frontmatter support</strong>|
 
-| ![nunjucks grammar](./images/nunjucks-grammar.png) |
+| ![nunjucks-grammar](https://user-images.githubusercontent.com/402910/156658952-e3c1f67d-70e6-4042-b30f-b4d6dfcc3cca.png) |
 |:--:|
 | <strong>Using the Nunjucks grammar also support highlighting and frontmatter</strong>|
 
@@ -38,15 +39,15 @@ The reason for the fork is to avoid conflicts and behavior issues when editing `
 <br>
 <br>
 
-| ![snippets in markdown](./images/nunjucks-snippets-in-markdown.png) |
+| ![nunjucks-snippets-in-markdown](https://user-images.githubusercontent.com/402910/156658997-f1db75da-a276-4428-9acb-ab8f21e84cc3.png) |
 |:--:|
 | <strong>Nunjucks Snippets in Markdown 😍</strong>|
 
-| ![snippets in njk](./images/nunjucks-snippets-in-html.png) |
+| ![nunjucks-snippets-in-html](https://user-images.githubusercontent.com/402910/156658994-b2c229dc-c047-4eb0-92f3-cec90d5f82e5.png) |
 |:--:|
 | <strong>Nunjucks Snippets in HTML 😍</strong>|
 
-| ![snippets in njk](./images/nunjucks-snippets-in-nunjucks.png) |
+| ![nunjucks-snippets-in-nunjucks](https://user-images.githubusercontent.com/402910/156659001-d372cf57-5983-48e6-a28a-d7a438374871.png) |
 |:--:|
 | <strong>Nunjucks Snippets in Nunjucks 😊</strong>|
 
@@ -61,7 +62,8 @@ One "gotcha" is code folding support. You will need to include the below to enab
 "editor.foldingStrategy": "indentation"
 ```
 
-![cold folding](./images/nunjucks-code-folding.gif)
+![nunjucks-code-folding](https://user-images.githubusercontent.com/402910/156659091-7edf009c-ef0a-4815-af4c-f7c413629e1d.gif)
+
 
 
 
