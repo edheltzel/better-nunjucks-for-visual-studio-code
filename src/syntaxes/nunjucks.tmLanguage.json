@@ -140,7 +140,7 @@
     },
     "support-variable": {
       "name": "support.variable.njk",
-      "match": "\\b(arr|attr|all|reverse|caseSens|data|size|alias|filter|resolve|reverse|page|post|collections|url|fileSlug|filePathStem|inputPath|outputPath|outputFileExtension)\\b"
+      "match": "\\b(arr|attr|all|reverse|caseSens|import|data|size|alias|filter|resolve|reverse|page|post|collections|url|fileSlug|filePathStem|inputPath|outputPath|outputFileExtension)\\b"
     },
     "support-constant": {
       "name": "support.constant.njk",
