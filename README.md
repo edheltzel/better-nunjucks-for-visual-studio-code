@@ -3,14 +3,29 @@
 ## Syntax Highlighting:
 
 For `.njk`, `.html`, and `.md` files the grammar is auto-detected.
-All `.njk` files will default to `html` and provide syntax highlighting for Nunjucks tags, filers, and variables are injected into the `html` grammar. This keeps the developer experience as simple as possible, without having to configure global or workspace settings with `files.association`. This will also provide the least amount of friction between other extensions that support, markdown and/or HTML.
+All `.njk` files will default to `html` and provide syntax highlighting for Nunjucks tags, filers, and variables which are injected into the default `html` grammar. This attempts to keep the developer experience (DX) as simple as possible, without having to configure global or workspace settings with `files.association`. Hopefully this will provide the least amount of friction between other extensions that support Markdown or HTML.
 <br>
 <br>
 
-![code folding](./images/syntax-1.png)
-![nunjucks inside of markdown](./images/syntax-2.png)
-![syntax example njk file](./images/syntax-3.png)
-![syntax example njk file 2](./images/syntax-4.png)
+| ![nunjucks inside of markdown](./images/nunjucks-in-markdown.png) |
+|:--:|
+| <strong>Nunjucks inside of Markdown + frontmatter support</strong>|
+
+| ![complex example of nunjucks in html](./images/nunjucks-complex-page.png) |
+|:--:|
+| <strong>Complex example of Nunjucks inside of HTML + frontmatter support</strong>|
+
+| ![basic nunjucks in a html file](./images/nunjucks-in-html.png) |
+|:--:|
+| <strong>Nunjucks inside of HTML + frontmatter support</strong>|
+
+| ![nunjucks with 11ty](./images/nunjucks-with-11ty.png) |
+|:--:|
+| <strong>Using Nunjucks with Eleventy + frontmatter support</strong>|
+
+| ![nunjucks grammar](./images/nunjucks-grammar.png) |
+|:--:|
+| <strong>Using the Nunjucks grammar also support highlighting and frontmatter</strong>|
 
 ## Snippets:
 
@@ -23,8 +38,18 @@ The reason for the fork is to avoid conflicts and behavior issues when editing `
 <br>
 <br>
 
-![snippets in markdown](./images/snippets-1.png)
-![snippets in njk](./images/snippets-2.png)
+| ![snippets in markdown](./images/nunjucks-snippets-in-markdown.png) |
+|:--:|
+| <strong>Nunjucks Snippets in Markdown 😍</strong>|
+
+| ![snippets in njk](./images/nunjucks-snippets-in-html.png) |
+|:--:|
+| <strong>Nunjucks Snippets in HTML 😍</strong>|
+
+| ![snippets in njk](./images/nunjucks-snippets-in-nunjucks.png) |
+|:--:|
+| <strong>Nunjucks Snippets in Nunjucks 😊</strong>|
+
 
 
 ## Known Issues
