@@ -1,65 +1,67 @@
-# ginfuru-nunjucks README
+# Visual Studio Code Nunjucks Syntax and Snippets Extension
 
-This is the README for your extension "ginfuru-nunjucks". After writing up a brief description, we recommend including the following sections.
+## Syntax Highlighting:
 
-## Features
+For `.njk`, `.html`, and `.md` files the grammar is auto-detected.
+All `.njk` files will default to `html` and provide syntax highlighting for Nunjucks tags, filers, and variables are injected into the `html` grammar. This keeps the developer experience as simple as possible, without having to configure global or workspace settings with `files.association`. This will also provide the least amount of friction between other extensions that support, markdown and/or HTML.
+<br>
+<br>
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+![code folding](./images/syntax-1.png)
+![nunjucks inside of markdown](./images/syntax-2.png)
+![syntax example njk file](./images/syntax-3.png)
+![syntax example njk file 2](./images/syntax-4.png)
 
-For example if there is an image subfolder under your extension project workspace:
+## Snippets:
 
-\!\[feature X\]\(images/feature-x.png\)
+The snippets are a combined fork of other Nunjucks snippet extensions but is extended to include all of Nunjucks built-in tags and provide support for multiple file extensions – `.njk`, `.html`, & `.md`
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+The reason for the fork is to avoid conflicts and behavior issues when editing `njk`, `html`, and/or `md` files or when altering `files.association`
 
-## Requirements
+> Note: If you would rather not use the snippets provided in this extension, no worries - I highly recommend installing [Control Snippets](https://marketplace.visualstudio.com/items?itemName=svipas.control-snippets) to enable or disable VS Code's built-in or manually installed snippets.
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+<br>
+<br>
 
-## Extension Settings
+![snippets in markdown](./images/snippets-1.png)
+![snippets in njk](./images/snippets-2.png)
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+One "gotcha" is code folding support. You will need to include the below to enable code folding for Nunjucks tags:
 
-## Release Notes
+```json
+//"_comment": "add this to your Global or Workspace settings.json"
+"editor.foldingStrategy": "indentation"
+```
 
-Users appreciate release notes as you update your extension.
+![cold folding](./images/nunjucks-code-folding.gif)
 
-### 1.0.0
 
-Initial release of ...
 
-### 1.0.1
+When selecting the `nunjucks` grammar, enabling support for emmet is provided though the editor or the workspace settings:
 
-Fixed issue #.
+```json
+  "emmet.includeLanguages": {
+    "md": "html",
+    "njk": "html",
+  },
+  "emmet.syntaxProfiles": {
+    "md": "html",
+    "njk": "html",
+  }
+```
 
-### 1.1.0
+## TODO
 
-Added features X, Y, and Z.
+- [X] Document how code folding works
+- [X] Write about syntax injection with Auto detect
+- [X] Setting `nunjucks` grammar and changes from auto-detect
+- [X] Need images of syntax
+- [ ] Add more support for custom tags and filter (syntax)
+- [ ] Add all built-in filers to snippets
+- [ ] Add built-in variables to snippets
+- [ ] Add support of [Eleventy](https://www.11ty.dev/)
+  - [ ] detect if `.eleventy.js` is available
 
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
