@@ -30,7 +30,11 @@
       {
         "language": "nunjucks",
         "scopeName": "source.njk",
-        "path": "./src/syntaxes/nunjucks.tmLanguage.json"
+        "path": "./src/syntaxes/nunjucks.tmLanguage.json",
+        "injectTo": [
+          "text.html.markdown",
+          "text.html"
+        ]
       },
       {
         "language": "nunjucks",
