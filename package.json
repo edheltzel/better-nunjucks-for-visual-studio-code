@@ -5,7 +5,7 @@
   "version": "0.0.1",
   "publisher": "ginfuru",
   "engines": {
-    "vscode": "^1.64.0"
+    "vscode": "^1.60.0"
   },
   "categories": [
     "Programming Languages"
@@ -35,17 +35,17 @@
     "languages": [
       {
         "id": "nunjucks",
+        "configuration": "./src/language/nunjucks.language-configuration.json",
         "aliases": [
-          "Better Nunjucks Syntax Support",
-          "nunjucks"
-        ],
+          "Nunjucks"
+        ]
+      },
+      {
+        "id": "html",
         "extensions": [
           ".njk",
-          ".nunjucks",
-          ".html",
-          ".md"
-        ],
-        "configuration": "./src/language/nunjucks.language-configuration.json"
+          ".nunjucks"
+        ]
       }
     ],
     "grammars": [
@@ -55,8 +55,7 @@
         "path": "./src/syntaxes/nunjucks.tmLanguage.json",
         "injectTo": [
           "text.html.markdown",
-          "text.html",
-          "source.json"
+          "text.html"
         ]
       },
       {
