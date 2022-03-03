@@ -1,4 +1,4 @@
-# Visual Studio Code Nunjucks Syntax and Snippets Extension
+# Better Nunjucks Syntax and Snippets Extension for Visual Studio Code
 
 ## Syntax Highlighting:
 
