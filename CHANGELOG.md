@@ -4,7 +4,10 @@ All notable changes to the "vscode-nunjucks-syntax" extension will be documented
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
-## [v0.1.0]
+## [v0.0.2]
+- fixes broken images on marketplace.
+
+## [v0.0.1]
 
 - Initial Public Release
 
