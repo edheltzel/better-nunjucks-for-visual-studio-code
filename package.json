@@ -3,12 +3,34 @@
   "displayName": "Better Nunjucks",
   "description": "Better Nunjucks Syntax Highlighting and Snippets for Visual Studio Code",
   "version": "0.0.1",
+  "publisher": "ginfuru",
   "engines": {
     "vscode": "^1.64.0"
   },
   "categories": [
     "Programming Languages"
   ],
+  "icon": "images/icon.png",
+  "galleryBanner": {
+    "color": "#161821",
+    "theme": "dark"
+  },
+  "keywords": [
+    "nunjucks",
+    "njk",
+    "html",
+    "markdown",
+    "11ty",
+    "eleventy",
+    "grammar",
+    "language"
+  ],
+  "homepage": "https://github.com/edheltzel/nunjucks-for-visual-studio-code",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/edheltzel/nunjucks-for-visual-studio-code.git"
+  },
+  "bugs": "https://github.com/edheltzel/nunjucks-for-visual-studio-code",
   "contributes": {
     "languages": [
       {
