@@ -32,6 +32,20 @@
         "scopeName": "source.njk",
         "path": "./src/syntaxes/nunjucks.tmLanguage.json"
       }
+    ],
+    "snippets": [
+      {
+        "language": "html",
+        "path": "./src/snippets/nunjucks-snippets.json"
+      },
+      {
+        "language": "markdown",
+        "path": "./src/snippets/nunjucks-snippets.json"
+      },
+      {
+        "language": "nunjucks",
+        "path": "./src/snippets/nunjucks-snippets.json"
+      }
     ]
   }
 }
