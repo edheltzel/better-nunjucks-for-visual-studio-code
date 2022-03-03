@@ -3,18 +3,91 @@
   "name": "Better Nunjucks Syntax Support",
   "comment": "Better Nunjucks syntax highlighting support for Visual Studio Code",
   "scopeName": "source.njk",
-  "injectionSelector": "L:text.html -meta.embedded -comment , text.html.markdown -comment,  L:source.json -string.quoted.*.json,",
-  "fileTypes": ["njk", "nunjucks", "html", "md", "json"],
-  "foldingStartMarker": "^{%-?\\s*(if|for|asyncEach|asyncAll|macro|set|block|filter|raw|)[^(%})]+-?%}",
+  "injectionSelector": "L:text.html -meta.embedded -comment , text.html.markdown -comment",
+  "fileTypes": ["njk", "nunjucks", "html", "md"],
+  "foldingStartMarker": "^{%-?\\s*(if|for|asyncEach|asyncAll|macro|set|block|filter|raw|call)[^(%})]+-?%}",
   "foldingStopMarker": "^{%-?\\s*(endif|endfor|endeach|endall|endmacro|endset|endblock|endfilter|endraw|endcall)[^(%})]+-?%}",
+
   "patterns": [
-    { "include": "#comment-tags" },
+    { "include": "#comments" },
     { "include": "#front-matter" },
     { "include": "#template-tags" },
     { "include": "#template-vars" }
   ],
   "repository": {
-    "comment-tags": {
+    "template-tags": {
+      "name": "punctuation.tag.njk",
+      "begin": "({%)(-)?",
+      "beginCaptures": {
+        "1": { "name": "punctuation.definition.tag.begin.njk" },
+        "2": { "name": "keyword.other.whitespace.njk" }
+      },
+      "end": "(-)?(%})",
+      "endCaptures": {
+        "1": { "name": "keyword.other.whitespace.njk" },
+        "2": { "name": "punctuation.definition.tag.end.njk" }
+      },
+      "patterns": [
+        { "include": "#constant-characters" },
+        { "include": "#constant-boolean" },
+        { "include": "#constant-numeric" },
+        { "include": "#constant-boolean" },
+        { "include": "#entity-name-tag" },
+        { "include": "#entity-other-attribute-name" },
+        { "include": "#include-tag" },
+        { "include": "#invalid-ampersand" },
+        { "include": "#invalid-array" },
+        { "include": "#invalid-conditions" },
+        { "include": "#invalid-operators" },
+        { "include": "#keyword-control" },
+        { "include": "#keyword-operators" },
+        { "include": "#keyword-operator-assignment" },
+        { "include": "#string-quoted-double" },
+        { "include": "#string-quoted-single" },
+        { "include": "#support-class" },
+        { "include": "#support-function" },
+        { "include": "#support-variable" },
+        { "include": "#support-constant" },
+        { "include": "#variable-parameter" },
+        { "include": "#variable-other" }
+      ]
+    },
+    "template-vars": {
+      "name": "punctuation.output.njk",
+      "begin": "({{)(-)?",
+      "beginCaptures": {
+        "1": {
+          "name": "punctuation.definition.tag.begin.njk"
+        },
+        "2": {
+          "name": "keyword.other.whitespace.njk"
+        }
+      },
+      "end": "(-)?(}})",
+      "endCaptures": {
+        "1": {
+          "name": "keyword.other.whitespace.njk"
+        },
+        "2": {
+          "name": "punctuation.definition.tag.end.njk"
+        }
+      },
+      "patterns": [
+        { "include": "#constant-characters" },
+        { "include": "#object-properties" },
+        { "include": "#string-quoted-double" },
+        { "include": "#string-quoted-single" },
+        { "include": "#support-class" },
+        { "include": "#support-function" },
+        { "include": "#support-variable" },
+        { "include": "#support-function-with-args" },
+        { "include": "#support-function-without-args" },
+        { "include": "#var-support-variable" },
+        { "include": "#variable-parameter" },
+        { "include": "#variable-other" }
+      ]
+    },
+    "comments": {
       "name": "comment.block.njk",
       "begin": "{#",
       "end": "#}"
@@ -52,21 +125,13 @@
       "name": "meta.embedded.block.frontmatter.njk",
       "begin": "---(?=\\s*\\n)",
       "beginCaptures": {
-        "0": {
-          "name": "punctuation.definition.tag.begin.njk"
-        }
+        "0": { "name": "punctuation.definition.tag.begin.njk" }
       },
       "end": "---(?=\\s*\\n)",
       "endCaptures": {
-        "0": {
-          "name": "punctuation.definition.tag.end.njk"
-        }
+        "0": { "name": "punctuation.definition.tag.end.njk" }
       },
-      "patterns": [
-        {
-          "include": "source.yaml"
-        }
-      ]
+      "patterns": [{ "include": "source.yaml" }]
     },
     "include-tag": {
       "name": "string.quoted.njk",
@@ -108,12 +173,13 @@
     },
     "keyword-operators": {
       "name": "keyword.operator.njk",
-      "match": "\\s+(and|or|not||((\\!|\\=|\\<|\\>)\\=))\\s+"
+      "match": "\\s+(and|or|not|import|as|with|in|ignore|((\\!|\\=|\\<|\\>)\\=))\\s+"
     },
     "keyword-operator-assignment": {
       "match": "/=",
       "name": "keyword.operator.assignment.augmented.njk"
     },
+
     "object-properties": {
       "match": "(?<=\\w.)(?<=\\w.)\\b\\w+?\\b\\s+?",
       "name": "variable.parameter.njk"
@@ -131,12 +197,12 @@
     },
     "support-class": {
       "name": "support.class.njk",
-      "comment": "custom filters for 11ty, extending macros, etc",
-      "match": "\\b(site|meta|slugify|log|getPreviousCollectionItem|getNedtCollectionItem|getCollectionItem|addAllPagesToCollections|as|with)\\b"
+      "comment": "custom filters and common collection keywords for 11ty and other ssgs –– MIGHT REMOVE THIS OR MAKE IT MORE UNIVERSAL",
+      "match": "\\b(site|meta|slugify|log|getPreviousCollectionItem|getNedtCollectionItem|getCollectionItem|addAllPagesToCollections|as|with|article|assets|block|blog|blogs|verbatim|canonical_url|cart|checkout|collection|collections|current|customer|date|discount|form|image|item|items|nunjucks|link|meta|next|page|title|pages|paginate|parent|post|posts|previous|product|products|request|search|site|tags|taxonomy|template|theme|themes|url|variant)\\b"
     },
     "support-function": {
       "name": "support.function.njk",
-      "match": "\\b(super|range|cycler|joiner|abs|batch|capitalize|center|date|default|d|dictsort|dump|escape|e|first|float|forceescape|groupby|indent|int|join|last|length|list|lower|nl2br|random|reject|rejectattr|replace|reverse|round|safe|select|selectattr|slice|sort|string|striptags|sum|title|trim|truncate|upper|urlencode|urlize|wordcount)\\b"
+      "match": "\\b(abs|batch|capitalize|center|dictsort|dump|escape|float|forceecape|groupby|indent|int|join|length|list|lower|nl2br|random|reject|rejectattr|replace|reverse|round|safe|select|slice|sort|string|striptags|sum|title|trim|truncate|upper|urlize|wordcount|range|joiner|cycler)\\b"
     },
     "support-variable": {
       "name": "support.variable.njk",
@@ -153,154 +219,6 @@
     "support-function-without-args": {
       "name": "support.function.without-args.njk",
       "match": "\\|\\s+(?![\\.0-9])[a-zA-Z0-9_-]+\\s+"
-    },
-    "template-tags": {
-      "name": "punctuation.tag.njk",
-      "begin": "({%)(-)?",
-      "beginCaptures": {
-        "1": {
-          "name": "punctuation.definition.tag.begin.njk"
-        },
-        "2": {
-          "name": "keyword.other.whitespace.njk"
-        }
-      },
-      "end": "(-)?(%})",
-      "endCaptures": {
-        "1": {
-          "name": "keyword.other.whitespace.njk"
-        },
-        "2": {
-          "name": "punctuation.definition.tag.end.njk"
-        }
-      },
-      "patterns": [
-        {
-          "include": "#constant-characters"
-        },
-        {
-          "include": "#constant-boolean"
-        },
-        {
-          "include": "#constant-numeric"
-        },
-        {
-          "include": "#constant-boolean"
-        },
-        {
-          "include": "#entity-name-tag"
-        },
-        {
-          "include": "#entity-other-attribute-name"
-        },
-        {
-          "include": "#include-tag"
-        },
-        {
-          "include": "#invalid-ampersand"
-        },
-        {
-          "include": "#invalid-array"
-        },
-        {
-          "include": "#invalid-conditions"
-        },
-        {
-          "include": "#invalid-operators"
-        },
-        {
-          "include": "#keyword-control"
-        },
-        {
-          "include": "#keyword-operators"
-        },
-        {
-          "include": "#keyword-operator-assignment"
-        },
-        {
-          "include": "#string-quoted-double"
-        },
-        {
-          "include": "#string-quoted-single"
-        },
-        {
-          "include": "#support-class"
-        },
-        {
-          "include": "#support-function"
-        },
-        {
-          "include": "#support-variable"
-        },
-        {
-          "include": "#support-constant"
-        },
-        {
-          "include": "#variable-parameter"
-        },
-        {
-          "include": "#variable-other"
-        }
-      ]
-    },
-    "template-vars": {
-      "name": "punctuation.output.njk",
-      "begin": "({{)(-)?",
-      "beginCaptures": {
-        "1": {
-          "name": "punctuation.definition.tag.begin.njk"
-        },
-        "2": {
-          "name": "keyword.other.whitespace.njk"
-        }
-      },
-      "end": "(-)?(}})",
-      "endCaptures": {
-        "1": {
-          "name": "keyword.other.whitespace.njk"
-        },
-        "2": {
-          "name": "punctuation.definition.tag.end.njk"
-        }
-      },
-      "patterns": [
-        {
-          "include": "#constant-characters"
-        },
-        {
-          "include": "#object-properties"
-        },
-        {
-          "include": "#string-quoted-double"
-        },
-        {
-          "include": "#string-quoted-single"
-        },
-        {
-          "include": "#support-class"
-        },
-        {
-          "include": "#support-function"
-        },
-        {
-          "include": "#support-variable"
-        },
-        {
-          "include": "#support-function-with-args"
-        },
-        {
-          "include": "#support-function-without-args"
-        },
-        {
-          "include": "#var-support-variable"
-        },
-        {
-          "include": "#variable-parameter"
-        },
-        {
-          "include": "#variable-other"
-        }
-      ]
     },
     "var-support-variable": {
       "name": "support.variable.njk",
