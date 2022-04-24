@@ -143,5 +143,10 @@
     "prefix": "cblock",
     "body": "{# \n\t${1:comment}\n#}\n",
     "description": "Nunjucks Comment"
+  },
+  "HTML Comment": {
+    "prefix": "hcomm",
+    "body": "<!-- \n\t${1:htmlComment}\n-->\n",
+    "description": "HTML Comment"
   }
 }
