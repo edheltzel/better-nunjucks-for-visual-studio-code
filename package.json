@@ -42,6 +42,7 @@
       },
       {
         "id": "html",
+        "configuration": "./src/language/html.language-configuration.json",
         "extensions": [
           ".njk",
           ".nunjucks"

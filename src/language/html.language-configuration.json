@@ -1,0 +1,6 @@
+{
+  "comments": {
+    // symbols used for single line comments as well as start and end a block comment.
+    "blockComment": ["{#", "#}"]
+  }
+}
