@@ -123,7 +123,7 @@
     "front-matter": {
       "contentName": "source.yaml",
       "name": "meta.embedded.block.frontmatter.njk",
-      "begin": "---(?=\\s*\\n)",
+      "begin": "^---[a-zA-Z0-9_-]*(?=\\s*\\n)",
       "beginCaptures": {
         "0": { "name": "punctuation.definition.tag.begin.njk" }
       },
