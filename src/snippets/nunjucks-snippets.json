@@ -2,11 +2,17 @@
   "Frontmatter": {
     "prefix": "--",
     "description": "Frontmatter",
-    "body": ["---", "$2", "---"]
+    "body": [
+      "---",
+      "$2",
+      "---"
+    ]
   },
   "Block": {
     "prefix": "block",
-    "body": ["{% block ${1:name} %}\n\t$2\n{% endblock ${1:name} %}"],
+    "body": [
+      "{% block ${1:name} %}\n\t$2\n{% endblock ${1:name} %}"
+    ],
     "description": "block defines a section on the template and identifies it with a name. This is used by template inheritance. Base templates can specify blocks and child templates can override them with new content."
   },
   "Complete Block": {
@@ -148,5 +154,25 @@
     "prefix": "hcomm",
     "body": "<!-- \n\t${1:htmlComment}\n-->\n",
     "description": "HTML Comment"
-  }
+  },
+  "11ty Edge": {
+    "prefix": "edge",
+    "body": "{% edge \"${1:language}\" %}\n\t${2: do edgey stuff}\n{% endedge %}",
+    "description": "Eleventy Edge: A plugin to run Eleventy in an Edge Function to add dynamic content to your Eleventy sites."
+  },
+  "11ty Render Template": {
+    "prefix": "render",
+    "body": "{% renderTemplatender \"${1:language}\" %}\n\t$2\n{% endrenderTemplate %}",
+    "description": "Use the `renderTemplate` paired shortcode to render a template string."
+  },
+  "11ty RenderFile": {
+    "prefix": "renderfile",
+    "body": "{% renderfile \"${1:file path}\" %}",
+    "description": "Use the`renderFile` shortcode to render an include file."
+  },
+  "11ty Syntax Highlight": {
+    "prefix": "highlight",
+    "body": "{% highlight\"${1:language}\" %}\n\t$2\n{% endhighlight %}",
+    "description": "Use the`highlight` paired shortcode to render syntax highlighting."
+  },
 }
