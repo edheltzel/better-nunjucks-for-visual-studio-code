@@ -4,6 +4,13 @@ All notable changes to the "vscode-nunjucks-syntax" extension will be documented
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [v0.2.2]
+
+- Adds snippets for Nunjucks filters
+- Adds snippets for Eleventy/11ty custom tags/shortcodes from plugins
+- Changes `hcomm` to `commenthtml` so that html comments are available in Nunjucks when typing `comment`
+- Changes `cblock` to `commentblock` so that html comments are available in Nunjucks when typing `comment`
+
 ## [v0.2.1]
 
 - Adds support for 11ty's Custom Frontmatter and Fixes [Issue #4](https://github.com/edheltzel/nunjucks-for-visual-studio-code/issues/4)
