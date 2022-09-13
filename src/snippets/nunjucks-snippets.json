@@ -140,6 +140,11 @@
     "body": "| ${1:filter}",
     "description": "You can pass filters from the variable directly e.g. {{ foo | escape }}"
   },
+  "Alt Pipe": {
+    "prefix": "|",
+    "body": "| ${1:filter}",
+    "description": "You can pass filters from the variable directly e.g. {{ foo | escape }}"
+  },
   "Comment": {
     "prefix": "comment",
     "body": "{# ${1:comment} #}\n",
@@ -150,29 +155,84 @@
     "body": "{# \n\t${1:comment}\n#}\n",
     "description": "Nunjucks Comment"
   },
+  "Alt Comment Block": {
+    "prefix": "commentblock",
+    "body": "{# \n\t${1:comment}\n#}\n",
+    "description": "Nunjucks Comment"
+  },
   "HTML Comment": {
     "prefix": "hcomm",
     "body": "<!-- \n\t${1:htmlComment}\n-->\n",
     "description": "HTML Comment"
   },
-  "11ty Edge": {
+  "Alt HTML Comment": {
+    "prefix": "commenthtml",
+    "body": "<!-- \n\t${1:htmlComment}\n-->\n",
+    "description": "HTML Comment"
+  },
+  "11ty: Edge": {
     "prefix": "edge",
     "body": "{% edge \"${1:language}\" %}\n\t${2: do edgey stuff}\n{% endedge %}",
     "description": "Eleventy Edge: A plugin to run Eleventy in an Edge Function to add dynamic content to your Eleventy sites."
   },
-  "11ty Render Template": {
+  "11ty: Render Template": {
     "prefix": "render",
     "body": "{% renderTemplatender \"${1:language}\" %}\n\t$2\n{% endrenderTemplate %}",
     "description": "Use the `renderTemplate` paired shortcode to render a template string."
   },
-  "11ty RenderFile": {
+  "11ty: RenderFile": {
     "prefix": "renderfile",
     "body": "{% renderfile \"${1:file path}\" %}",
     "description": "Use the`renderFile` shortcode to render an include file."
   },
-  "11ty Syntax Highlight": {
+  "11ty: Syntax Highlight": {
     "prefix": "highlight",
     "body": "{% highlight\"${1:language}\" %}\n\t$2\n{% endhighlight %}",
     "description": "Use the`highlight` paired shortcode to render syntax highlighting."
   },
+  "Filter: escape": {
+    "prefix": "|esc",
+    "body": "| escape $1",
+    "description": "Use this if you need to display text that might contain such characters in HTML. Marks return value as markup string e.g. {{ foo | escape }}"
+  },
+  "Filter: safe": {
+    "prefix": "|safe",
+    "body": "| safe $1",
+    "description": "Mark the value as safe which means that in an environment with automatic escaping enabled this variable will not be escaped e.g. {{ foo | safe }}"
+  },
+  "Filter: abs": {
+    "prefix": "|abs",
+    "body": "| abs $1",
+    "description": "Return the absolute value of the argument e.g. {{ -2 | abs }}"
+  },
+  "Filter: batch": {
+    "prefix": "|batch",
+    "body": "| batch($1) $2",
+    "description": "Return a list of lists with the given number of items: e.g. see Nunjucks docs"
+  },
+  "Filter: capitalize": {
+    "prefix": "|cap",
+    "body": "| capitalize $2",
+    "description": "Make the first letter uppercase, the rest lower case: e.g. {{ \"This Is A Test\" | capitalize }}"
+  },
+  "Filter: center": {
+    "prefix": "|center",
+    "body": "| center $2",
+    "description": "Center the value in a field of a given width: e.g. {{ \"fooo\" | center }}"
+  },
+  "Filter: default": {
+    "prefix": "|def",
+    "body": "| default($1, $2, $3) $4",
+    "description": "If value is strictly undefined, return default, otherwise value. If boolean is true, any JavaScript falsy value will return default (false, \"\", etc) e.g. {{ foo | default('bar', true) }}"
+  },
+  "Filter: dictsort": {
+    "prefix": "|dict",
+    "body": "| dictsort $1",
+    "description": "Sort a dict and yield (key, value) pairs: e.g. {{ {b: 2, a: 1} | dictsort }}"
+  },
+  "Filter: dump": {
+    "prefix": "|dump",
+    "body": "| dump $1",
+    "description": "Call JSON.stringify on an object and dump the result into the template. Useful for debugging: {{ items | dump }}: e.g. {% set items = [\"a\", 1, { b : true}] %} {{ items | dump }}"
+  }
 }
