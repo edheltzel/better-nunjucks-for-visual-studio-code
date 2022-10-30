@@ -175,6 +175,11 @@
     "body": "{% edge \"${1:language}\" %}\n\t${2: do edgey stuff}\n{% endedge %}",
     "description": "Eleventy Edge: A plugin to run Eleventy in an Edge Function to add dynamic content to your Eleventy sites."
   },
+  "11ty: Image": {
+    "prefix": "image",
+    "body": "{% image \"${1:src},\" \n\t${2: alt}\n %}",
+    "description": "Eleventy Edge: A plugin to run Eleventy in an Edge Function to add dynamic content to your Eleventy sites."
+  },
   "11ty: Render Template": {
     "prefix": "render",
     "body": "{% renderTemplatender \"${1:language}\" %}\n\t$2\n{% endrenderTemplate %}",
@@ -189,6 +194,36 @@
     "prefix": "highlight",
     "body": "{% highlight\"${1:language}\" %}\n\t$2\n{% endhighlight %}",
     "description": "Use the`highlight` paired shortcode to render syntax highlighting."
+  },
+  "11ty Filter: getCollectionItem": {
+    "prefix": "|getCol",
+    "body": "| getCollectionItem $1",
+    "description": "Fetches the current page from a collection."
+  },
+  "11ty Filter: getNextCollectionItem": {
+    "prefix": "|next",
+    "body": "| getNextCollectionItem $1",
+    "description": "Fetch the next items in a collection when you pass in the current `page` object."
+  },
+  "11ty Filter: getPreviousCollectionItem": {
+    "prefix": "|prev",
+    "body": "| getPreviousCollectionItem $1",
+    "description": "Fetch the previous items in a collection when you pass in the current `page` object."
+  },
+  "11ty Filter: log": {
+    "prefix": "|log",
+    "body": "| log $1",
+    "description": "`console.log` a value in your templates."
+  },
+  "11ty Filter: slugify": {
+    "prefix": "|slug",
+    "body": "| slugify $1",
+    "description": "Convert a string into a URL slug."
+  },
+  "11ty Filter: url": {
+    "prefix": "|url",
+    "body": "| url $1",
+    "description": "Normalize absolute paths in your content, allows easily changing deploy subdirectories for your project."
   },
   "Filter: escape": {
     "prefix": "|esc",
