@@ -76,13 +76,13 @@ Another is when selecting the `nunjucks` grammar, enabling support for emmet is 
 
 ## TODO
 
-- [x] Document how code folding works
-- [x] Write about syntax injection with Auto detect
-- [x] Setting `nunjucks` grammar and changes from auto-detect
-- [x] Need images of syntax
-- [x] Nunjucks Style Comments – [Issue #1](https://github.com/edheltzel/nunjucks-for-visual-studio-code/issues/1)
+- [x] ~~Document how code folding works~~
+- [x] ~~Write about syntax injection with Auto detect~~
+- [x] ~~Setting `nunjucks` grammar and changes from auto-detect~~
+- [x] ~~Need images of syntax~~
+- [x] ~~Nunjucks Style Comments – [Issue #1](https://github.com/edheltzel/nunjucks-for-visual-studio-code/issues/1)~~
 - [ ] Add more support for custom tags and filter (syntax)
 - [ ] Add all built-in filers to snippets
 - [ ] Add built-in variables to snippets
 - [ ] Add support of [Eleventy](https://www.11ty.dev/)
-  - [ ] detect if `.eleventy.js` is available
+  - [ ] detect if `.eleventy.js` is available 🤷idk if this is even possible
