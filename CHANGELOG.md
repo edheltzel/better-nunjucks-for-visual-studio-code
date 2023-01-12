@@ -6,6 +6,9 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [v0.2.2]
 
+- Adds snippets for Eleventy i18n plugins filters - two additional filters.
+## [v0.2.2]
+
 - Adds snippets for Nunjucks filters - missed some in the beginning.
 - Adds snippets for Eleventy/11ty custom tags/shortcodes from plugins (if I missed any please submit a ticket or PR)
   - Plugins are generally the core plugins of 11ty.

@@ -7,6 +7,12 @@
   "engines": {
     "vscode": "^1.60.0"
   },
+  "scripts": {
+    "patch": "npm version patch",
+    "minor": "npm version minor",
+    "major": "npm version major",
+    "publish": "vsce publish"
+  },
   "categories": [
     "Programming Languages"
   ],
