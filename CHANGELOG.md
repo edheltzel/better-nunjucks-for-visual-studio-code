@@ -6,8 +6,9 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [v0.2.2]
 
-- Adds snippets for Nunjucks filters
-- Adds snippets for Eleventy/11ty custom tags/shortcodes from plugins ( if I missed any please submit a ticket or PR)
+- Adds snippets for Nunjucks filters - missed some in the beginning.
+- Adds snippets for Eleventy/11ty custom tags/shortcodes from plugins (if I missed any please submit a ticket or PR)
+  - Plugins are generally the core plugins of 11ty.
 - Changes `hcomm` to `commenthtml` so that html comments are available in Nunjucks when typing `comment`
 - Changes `cblock` to `commentblock` so that html comments are available in Nunjucks when typing `comment`
 

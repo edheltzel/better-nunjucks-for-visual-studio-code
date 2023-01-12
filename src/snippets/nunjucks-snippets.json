@@ -172,7 +172,7 @@
   },
   "11ty: Edge": {
     "prefix": "edge",
-    "body": "{% edge \"${1:language}\" %}\n\t${2: do edgey stuff}\n{% endedge %}",
+    "body": "{% edge \"${1:language}\" %}\n\t${2: do edgy stuff}\n{% endedge %}",
     "description": "Eleventy Edge: A plugin to run Eleventy in an Edge Function to add dynamic content to your Eleventy sites."
   },
   "11ty: Image": {
@@ -215,6 +215,16 @@
     "body": "| log $1",
     "description": "`console.log` a value in your templates."
   },
+  "11ty Filter: i18n local_url ": {
+    "prefix": "i18url",
+    "body": "| locale_url $1",
+    "description": "Accepts any arbitrary URL string and transforms it using the current page’s locale."
+  },
+  "11ty Filter: i18n local_links ": {
+    "prefix": "i18link",
+    "body": "| locale_links $1",
+    "description": "Returns an array of the relevant alternative content for a specified URL (or, defaults to the current page). "
+  },
   "11ty Filter: slugify": {
     "prefix": "|slug",
     "body": "| slugify $1",
@@ -253,7 +263,7 @@
   "Filter: center": {
     "prefix": "|center",
     "body": "| center $2",
-    "description": "Center the value in a field of a given width: e.g. {{ \"fooo\" | center }}"
+    "description": "Center the value in a field of a given width: e.g. {{ \"foo\" | center }}"
   },
   "Filter: default": {
     "prefix": "|def",
@@ -268,7 +278,7 @@
   "Filter: lower": {
     "prefix": "|low",
     "body": "| lower $1",
-    "description": "Convert string to all lower case: e.g. {{ \"fOObAr\" | lower }}"
+    "description": "Convert string to all lower case: e.g. {{ \"fooBar\" | lower }}"
   },
   "Filter: dump": {
     "prefix": "|dump",
