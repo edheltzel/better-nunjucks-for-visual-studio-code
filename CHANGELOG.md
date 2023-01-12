@@ -4,7 +4,7 @@ All notable changes to the "vscode-nunjucks-syntax" extension will be documented
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
-## [v0.2.2]
+## [v0.2.3]
 
 - Adds snippets for Eleventy i18n plugins filters - two additional filters.
 ## [v0.2.2]
