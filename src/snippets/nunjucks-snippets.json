@@ -265,6 +265,11 @@
     "body": "| dictsort $1",
     "description": "Sort a dict and yield (key, value) pairs: e.g. {{ {b: 2, a: 1} | dictsort }}"
   },
+  "Filter: lower": {
+    "prefix": "|low",
+    "body": "| lower $1",
+    "description": "Convert string to all lower case: e.g. {{ \"fOObAr\" | lower }}"
+  },
   "Filter: dump": {
     "prefix": "|dump",
     "body": "| dump $1",
