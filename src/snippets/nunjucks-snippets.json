@@ -182,7 +182,7 @@
   },
   "11ty: Render Template": {
     "prefix": "render",
-    "body": "{% renderTemplatender \"${1:language}\" %}\n\t$2\n{% endrenderTemplate %}",
+    "body": "{% renderTemplate \"${1:language}\" %}\n\t$2\n{% endrenderTemplate %}",
     "description": "Use the `renderTemplate` paired shortcode to render a template string."
   },
   "11ty: RenderFile": {
