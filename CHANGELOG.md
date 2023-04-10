@@ -4,6 +4,9 @@ All notable changes to the "vscode-nunjucks-syntax" extension will be documented
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [v0.2.4]
+
+- Fixes [issue #12](https://github.com/edheltzel/nunjucks-for-visual-studio-code/issues/12).
 ## [v0.2.3]
 
 - Adds snippets for Eleventy i18n plugins filters - two additional filters.
