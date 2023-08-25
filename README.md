@@ -82,7 +82,7 @@ Another is when selecting the `nunjucks` grammar, enabling support for emmet is 
 - [x] ~~Need images of syntax~~
 - [x] ~~Nunjucks Style Comments – [Issue #1](https://github.com/edheltzel/nunjucks-for-visual-studio-code/issues/1)~~
 - [ ] Add more support for custom tags and filter (syntax)
-- [ ] Add all built-in filers to snippets
+- [x] ~~Add all built-in filers to snippets~~  If I missed some, please create a PR.
 - [ ] Add built-in variables to snippets
 - [ ] Add support of [Eleventy](https://www.11ty.dev/)
   - [ ] detect if `.eleventy.js` is available 🤷idk if this is even possible
