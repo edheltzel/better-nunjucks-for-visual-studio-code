@@ -6,9 +6,8 @@
       "#}"
     ]
   },
-  // NOTE: add support for colorizedBracketPairs
   // exposes an empty [] value on colorizedBracketPairs to override bracket pair highlighting
-  // "colorizedBracketPairs": [],
+  "colorizedBracketPairs": [],
   // symbols used as brackets
   "brackets": [
     [
