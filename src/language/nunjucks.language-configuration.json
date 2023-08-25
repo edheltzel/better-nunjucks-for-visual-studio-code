@@ -1,42 +1,130 @@
 {
   "comments": {
     // symbols used for single line comments as well as start and end a block comment.
-    "blockComment": ["{#", "#}"]
+    "blockComment": [
+      "{#",
+      "#}"
+    ]
   },
+  // NOTE: add support for colorizedBracketPairs
+  // exposes an empty [] value on colorizedBracketPairs to override bracket pair highlighting
+  // "colorizedBracketPairs": [],
   // symbols used as brackets
   "brackets": [
-    ["{{", "}}"],
-    ["{", "}"],
-    ["{%", "%}"],
-    ["[", "]"],
-    ["(", ")"],
-    ["---", "---"],
-    ["<!--", "-->"],
-    ["<", ">"]
+    [
+      "{{",
+      "}}"
+    ],
+    [
+      "{",
+      "}"
+    ],
+    [
+      "{%",
+      "%}"
+    ],
+    [
+      "[",
+      "]"
+    ],
+    [
+      "(",
+      ")"
+    ],
+    [
+      "---",
+      "---"
+    ],
+    [
+      "<!--",
+      "-->"
+    ],
+    [
+      "<",
+      ">"
+    ]
   ],
   // symbols that are auto closed when typing
   "autoClosingPairs": [
-    { "open": "{", "close": "}" },
-    { "open": "{{", "close": "}}" },
-    { "open": "{%", "close": "%}" },
-    { "open": "%", "close": "%", "notIn": ["comment", "string"] },
-
-    { "open": "{#", "close": "#}" },
-    { "open": "[", "close": "]" },
-    { "open": "(", "close": ")" },
-    { "open": "'", "close": "'" },
-    { "open": "\"", "close": "\"" },
-    { "open": "<!--", "close": "-->", "notIn": ["comment", "string"] }
+    {
+      "open": "{",
+      "close": "}"
+    },
+    {
+      "open": "{{",
+      "close": "}}"
+    },
+    {
+      "open": "{%",
+      "close": "%}"
+    },
+    {
+      "open": "%",
+      "close": "%",
+      "notIn": [
+        "comment",
+        "string"
+      ]
+    },
+    {
+      "open": "{#",
+      "close": "#}"
+    },
+    {
+      "open": "[",
+      "close": "]"
+    },
+    {
+      "open": "(",
+      "close": ")"
+    },
+    {
+      "open": "'",
+      "close": "'"
+    },
+    {
+      "open": "\"",
+      "close": "\""
+    },
+    {
+      "open": "<!--",
+      "close": "-->",
+      "notIn": [
+        "comment",
+        "string"
+      ]
+    }
   ],
   // symbols that can be used to surround a selection
   "surroundingPairs": [
-    { "open": "<", "close": ">" },
-    { "open": "'", "close": "'" },
-    { "open": "\"", "close": "\"" },
-    { "open": "{{", "close": "}}" },
-    { "open": "{", "close": "}}" },
-    { "open": "[", "close": "]" },
-    { "open": "(", "close": ")" }
+    {
+      "open": "<",
+      "close": ">"
+    },
+    {
+      "open": "'",
+      "close": "'"
+    },
+    {
+      "open": "\"",
+      "close": "\""
+    },
+    {
+      "open": "{{",
+      "close": "}}"
+    },
+    {
+      "open": "{",
+      "close": "}}"
+    },
+    {
+      "open": "[",
+      "close": "]"
+    },
+    {
+      "open": "(",
+      "close": ")"
+    }
   ],
   "folding": {
     "marker": {
