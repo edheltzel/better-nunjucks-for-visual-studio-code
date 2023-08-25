@@ -6,8 +6,6 @@
       "#}"
     ]
   },
-  // exposes an empty [] value on colorizedBracketPairs to override bracket pair highlighting
-  "colorizedBracketPairs": [],
   // symbols used as brackets
   "brackets": [
     [
@@ -94,6 +92,8 @@
       ]
     }
   ],
+  // exposes an empty [] value on colorizedBracketPairs to override bracket pair highlighting
+  "colorizedBracketPairs": [],
   // symbols that can be used to surround a selection
   "surroundingPairs": [
     {
