@@ -4,6 +4,8 @@ All notable changes to the "vscode-nunjucks-syntax" extension will be documented
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [v0.2.5]
+- Adds an empty `[]` value on colorizedBracketPairs to override bracket pair highlighting. To keep coloring of nunjucks tags consistent from theme to theme.
 ## [v0.2.4]
 
 - Fixes [issue #12](https://github.com/edheltzel/nunjucks-for-visual-studio-code/issues/12).
