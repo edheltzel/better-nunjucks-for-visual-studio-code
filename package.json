@@ -11,7 +11,8 @@
     "patch": "npm version patch",
     "minor": "npm version minor",
     "major": "npm version major",
-    "publish": "vsce publish"
+    "publish": "vsce publish",
+    "ovsx": "ovsx"
   },
   "categories": [
     "Programming Languages"
@@ -85,5 +86,8 @@
         "path": "./src/snippets/nunjucks-snippets.json"
       }
     ]
+  },
+  "devDependencies": {
+    "ovsx": "^0.8.3"
   }
 }
