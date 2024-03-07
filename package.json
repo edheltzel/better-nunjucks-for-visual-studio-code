@@ -12,7 +12,7 @@
     "minor": "npm version minor",
     "major": "npm version major",
     "publish": "vsce publish",
-    "ovsx": "ovsx"
+    "ovsx": "node ovsx.js"
   },
   "categories": [
     "Programming Languages"
@@ -88,6 +88,6 @@
     ]
   },
   "devDependencies": {
-    "ovsx": "^0.8.3"
+    "dotenv": "^16.4.5"
   }
 }
