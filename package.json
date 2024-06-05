@@ -7,13 +7,6 @@
   "engines": {
     "vscode": "^1.60.0"
   },
-  "scripts": {
-    "patch": "npm version patch",
-    "minor": "npm version minor",
-    "major": "npm version major",
-    "publish": "vsce publish",
-    "ovsx": "node ovsx.js"
-  },
   "categories": [
     "Programming Languages"
   ],
@@ -96,5 +89,13 @@
   },
   "devDependencies": {
     "dotenv": "^16.4.5"
+  },
+  "scripts": {
+    "patch": "npm version patch",
+    "minor": "npm version minor",
+    "major": "npm version major",
+    "ovsx": "node ovsx.js",
+    "release": "gh release create v$npm_package_version --generate-notes --latest",
+    "publish": "vsce publish"
   }
 }

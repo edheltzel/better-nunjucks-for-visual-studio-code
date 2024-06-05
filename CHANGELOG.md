@@ -4,14 +4,22 @@ All notable changes to the "vscode-nunjucks-syntax" extension will be documented
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [v0.2.6]
+
+- Adds comment block support to markdown files thanks to PR [#18](https://github.com/edheltzel/nunjucks-for-visual-studio-code/pull/18) from [cypressSap](https://github.com/cypressSap) -- Thanks! 👍
+
 ## [v0.2.5]
+
 - Adds an empty `[]` value on colorizedBracketPairs to override bracket pair highlighting. To keep coloring of nunjucks tags consistent from theme to theme.
+
 ## [v0.2.4]
 
 - Fixes [issue #12](https://github.com/edheltzel/nunjucks-for-visual-studio-code/issues/12).
+
 ## [v0.2.3]
 
 - Adds snippets for Eleventy i18n plugins filters - two additional filters.
+
 ## [v0.2.2]
 
 - Adds snippets for Nunjucks filters - missed some in the beginning.
