@@ -6,7 +6,7 @@ const { spawn } = require("child_process");
 const publish = spawn("npx", [
 	"ovsx",
 	"publish",
-	"./better-nunjucks-0.2.5.vsix",
+	"./better-nunjucks-0.2.6.vsix",
 	"-p",
 	token,
 ]);
