@@ -4,13 +4,7 @@ const token = process.env.OVSX_TOKEN;
 
 // spawn a child process to run the publish command for ovsx cli
 const { spawn } = require("child_process");
-const publish = spawn("npx", [
-	"ovsx",
-	"publish",
-	"./better-nunjucks-0.2.5.vsix",
-	"-p",
-	token,
-]);
+const publish = spawn("npx", ["ovsx", "publish", "--pat", token]);
 
 // Listen for any response from the child process
 publish.stdout.on("data", (data) => {
