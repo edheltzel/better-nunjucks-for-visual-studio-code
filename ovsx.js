@@ -1,3 +1,4 @@
+// cspell:disable
 require("dotenv").config();
 const token = process.env.OVSX_TOKEN;
 
@@ -6,7 +7,7 @@ const { spawn } = require("child_process");
 const publish = spawn("npx", [
 	"ovsx",
 	"publish",
-	"./better-nunjucks-0.2.6.vsix",
+	"./better-nunjucks-0.2.5.vsix",
 	"-p",
 	token,
 ]);
