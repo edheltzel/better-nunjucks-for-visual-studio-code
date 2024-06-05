@@ -54,6 +54,13 @@
           ".njk",
           ".nunjucks"
         ]
+      },
+      {
+        "id": "markdown",
+        "configuration": "./src/language/markdown.language-configuration.json",
+        "extensions": [
+          ".md"
+        ]
       }
     ],
     "grammars": [
