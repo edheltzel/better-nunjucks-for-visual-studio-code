@@ -123,15 +123,19 @@
     "front-matter": {
       "contentName": "source.yaml",
       "name": "meta.embedded.block.frontmatter.njk",
-      "begin": "^---[a-zA-Z0-9_-]*(?=\\s*\\n)",
+      "begin": "\\A---(?=\\s*\\n)",
       "beginCaptures": {
         "0": { "name": "punctuation.definition.tag.begin.njk" }
       },
-      "end": "---(?=\\s*\\n)",
+      "end": "^(---)(?=\\s*$)",
       "endCaptures": {
-        "0": { "name": "punctuation.definition.tag.end.njk" }
+        "1": { "name": "punctuation.definition.tag.end.njk" }
       },
-      "patterns": [{ "include": "source.yaml" }]
+      "patterns": [
+        {
+          "include": "source.yaml"
+        }
+      ]
     },
     "include-tag": {
       "name": "string.quoted.njk",
