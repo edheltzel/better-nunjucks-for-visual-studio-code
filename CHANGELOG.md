@@ -6,6 +6,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [v0.2.7]
 
+- Snippet update - adds `{% verbatim %}` which was missed previously. See [Nunjucks Docs - Verbatim](https://mozilla.github.io/nunjucks/templating.html#verbatim) for more info.
+
+## [v0.2.7]
+
 - Fixes [issue #19](https://github.com/edheltzel/nunjucks-for-visual-studio-code/issues/19) by adding `\A` to assert the start of the file for frontmatter, this ensures that only the frontmatter block at the top of the file is highlighted.
 
 ## [v0.2.6]
