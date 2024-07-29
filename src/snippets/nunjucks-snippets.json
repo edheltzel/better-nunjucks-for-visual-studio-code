@@ -110,6 +110,11 @@
     "body": "{% from \"${1:template}\" import ${2:macro} as ${3:var} %}$4",
     "description": "It imports specific values from a template into the current namespace."
   },
+  "Verbatim": {
+    "prefix": "verbatim",
+    "body": "{% verbatim %}\n\t$1\n{% endverbatim %}",
+    "description": "{% verbatim %} has identical behavior as {% raw %}. It is added for compatibility with the Twig verbatim tag."
+  },
   "Raw": {
     "prefix": "raw",
     "body": "{% raw %}\n\t$1\n{% endraw %}",
