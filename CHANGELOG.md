@@ -4,6 +4,10 @@ All notable changes to the "vscode-nunjucks-syntax" extension will be documented
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [v0.2.72]
+
+- fixes description for 11ty Image snippet
+
 ## [v0.2.71]
 
 - Snippet update - adds `{% verbatim %}` which was missed previously. See [Nunjucks Docs - Verbatim](https://mozilla.github.io/nunjucks/templating.html#verbatim) for more info.
