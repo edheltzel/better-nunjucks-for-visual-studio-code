@@ -183,7 +183,7 @@
   "11ty: Image": {
     "prefix": "image",
     "body": "{% image \"${1:src},\" \n\t${2: alt}\n %}",
-    "description": "Eleventy Edge: A plugin to run Eleventy in an Edge Function to add dynamic content to your Eleventy sites."
+    "description": "Eleventy Image: A low level utility to perform image transformation for vector and raster images. See: https://www.11ty.dev/docs/plugins/image/#nunjucks-liquid-javascript-(asynchronous-shortcodes)"
   },
   "11ty: Render Template": {
     "prefix": "render",
