@@ -4,6 +4,26 @@ All notable changes to the "vscode-nunjucks-syntax" extension will be documented
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [v0.3.0]
+
+#### Minor release
+
+- Resolves [issue #21](https://github.com/edheltzel/nunjucks-for-visual-studio-code/issues/21) - fix front-matter pattern naming and improve syntax highlighting in nunjucks.tmLanguage.json
+
+Thank you to:
+- [ReduxFlakes](https://github.com/ReduxFlakes) for reporting this issue.
+- [gasatrya](https://github.com/gasatrya) for confirming the issue.
+- [RedCMD](https://github.com/RedCMD) for pointing out the solution.
+
+
+## [v0.2.72]
+
+- fixes description for 11ty Image snippet
+
+## [v0.2.71]
+
+- Snippet update - adds `{% verbatim %}` which was missed previously. See [Nunjucks Docs - Verbatim](https://mozilla.github.io/nunjucks/templating.html#verbatim) for more info.
+
 ## [v0.2.7]
 
 - Fixes [issue #19](https://github.com/edheltzel/nunjucks-for-visual-studio-code/issues/19) by adding `\A` to assert the start of the file for frontmatter, this ensures that only the frontmatter block at the top of the file is highlighted.
