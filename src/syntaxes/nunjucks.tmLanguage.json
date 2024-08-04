@@ -10,7 +10,7 @@
 
   "patterns": [
     { "include": "#comments" },
-    { "include": "#front-matter" },
+    { "include": "#frontMatter" },
     { "include": "#template-tags" },
     { "include": "#template-vars" }
   ],
@@ -120,20 +120,39 @@
         }
       }
     },
-    "front-matter": {
-      "contentName": "source.yaml",
+    "frontMatter": {
       "name": "meta.embedded.block.frontmatter.njk",
-      "begin": "\\A---(?=\\s*\\n)",
+      "applyEndPatternLast": 1,
+      "begin": "\\A(?=(-{3,}))",
+      "end": "^ {,3}\\1-*[ \\t]*$|^[ \\t]*\\.{3}$",
       "beginCaptures": {
-        "0": { "name": "punctuation.definition.tag.begin.njk" }
+        "1": {
+          "name": "punctuation.definition.begin.frontmatter.njk"
+        }
       },
-      "end": "^(---)(?=\\s*$)",
       "endCaptures": {
-        "1": { "name": "punctuation.definition.tag.end.njk" }
+        "0": {
+          "name": "punctuation.definition.end.frontmatter.njk"
+        }
       },
       "patterns": [
         {
-          "include": "source.yaml"
+          "begin": "\\A(-{3,})(.*)$",
+          "while": "^(?! {,3}\\1-*[ \\t]*$|[ \\t]*\\.{3}$)",
+          "beginCaptures": {
+            "1": {
+              "name": "punctuation.definition.begin.frontmatter.njk"
+            },
+            "2": {
+              "name": "comment.frontmatter"
+            }
+          },
+          "contentName": "meta.embedded.block.frontmatter.njk",
+          "patterns": [
+            {
+              "include": "source.yaml"
+            }
+          ]
         }
       ]
     },
