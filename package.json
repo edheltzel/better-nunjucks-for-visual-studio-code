@@ -2,7 +2,7 @@
   "name": "better-nunjucks",
   "displayName": "Better Nunjucks",
   "description": "Better Nunjucks Syntax Highlighting and Snippets for Visual Studio Code",
-  "version": "0.2.72",
+  "version": "0.3.0",
   "publisher": "ginfuru",
   "engines": {
     "vscode": "^1.60.0"
