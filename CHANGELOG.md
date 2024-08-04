@@ -4,7 +4,7 @@ All notable changes to the "vscode-nunjucks-syntax" extension will be documented
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
-## [v0.2.73]
+## [v0.2.8]
 
 - Resolves [issue #21](https://github.com/edheltzel/nunjucks-for-visual-studio-code/issues/21) - fix front-matter pattern naming and improve syntax highlighting in nunjucks.tmLanguage.json
 
