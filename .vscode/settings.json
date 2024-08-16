@@ -1,7 +1,6 @@
 {
-	"cSpell.language": "en,en-US",
-	"workbench.colorCustomizations": {
-		"titleBar.activeBackground": "default",
-		"titleBar.activeForeground": "#00ff00",
-	}
+  "cSpell.language": "en,en-US",
+  "workbench.colorCustomizations": {
+    "titleBar.activeForeground": "#00ff00",
+  }
 }
