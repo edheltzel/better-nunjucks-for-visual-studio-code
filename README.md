@@ -21,23 +21,19 @@ All `.njk` files will default to `html` and provide syntax highlighting for Nunj
 <br>
 <br>
 
-| ![nunjucks-snippets-in-markdown](https://user-images.githubusercontent.com/402910/156658780-99618c38-6cc6-4162-9716-c8ab0a69e961.png) |
+| ![nunjucks-snippets-in-markdown](https://github.com/edheltzel/better-nunjucks-for-visual-studio-code/blob/main/images/nunjucks-in-markdown.png?raw=true) |
 | :-----------------------------------------------------------------------------------------------------------------------------------: |
 |                                  <strong>Nunjucks inside of Markdown + frontmatter support</strong>                                   |
 
-| ![nunjucks-complex-page](https://user-images.githubusercontent.com/402910/156658807-af533204-1ad0-49cb-b361-6339b0e9cb34.png) |
+| ![nunjucks-complex-page](https://github.com/edheltzel/better-nunjucks-for-visual-studio-code/blob/main/images/nunjucks-complex-page.png?raw=true) |
 | :---------------------------------------------------------------------------------------------------------------------------: |
 |                       <strong>Complex example of Nunjucks inside of HTML + frontmatter support</strong>                       |
 
-| ![nunjucks-in-html](https://user-images.githubusercontent.com/402910/156658892-40e2995a-6386-4391-a0c7-d75043d969c4.png) |
+| ![nunjucks-in-html](https://github.com/edheltzel/better-nunjucks-for-visual-studio-code/blob/main/images/nunjucks-in-html.png?raw=true) |
 | :----------------------------------------------------------------------------------------------------------------------: |
 |                              <strong>Nunjucks inside of HTML + frontmatter support</strong>                              |
 
-| ![nunjucks-with-11ty](https://user-images.githubusercontent.com/402910/156658922-e2afb26d-ed2f-453a-a744-541d13bc339d.png) |
-| :------------------------------------------------------------------------------------------------------------------------: |
-|                            <strong>Using Nunjucks with Eleventy + frontmatter support</strong>                             |
-
-| ![nunjucks-grammar](https://github.com/edheltzel/better-nunjucks-for-visual-studio-code/blob/main/images/nunjucks-grammar.png?raw=true) |
+| ![nunjucks-with-11ty](https://github.com/edheltzel/better-nunjucks-for-visual-studio-code/blob/main/images/nunjucks-snippets-in-nunjucks.png?raw=true) |
 | :----------------------------------------------------------------------------------------------------------------------: |
 |                  <strong>Using the Nunjucks grammar also support highlighting and frontmatter</strong>                   |
 
@@ -56,7 +52,7 @@ The reason for the fork is to avoid conflicts and behavior issues when editing `
 | :-----------------------------------------------------------------------------------------------------------------------------------: |
 |                                           <strong>Nunjucks Snippets in Markdown 😍</strong>                                           |
 
-| ![nunjucks-snippets-in-html](https://github.com/edheltzel/better-nunjucks-for-visual-studio-code/blob/main/images/nunjucks-snippets-in-markdown.png?raw=true) |
+| ![nunjucks-snippets-in-html](https://github.com/edheltzel/better-nunjucks-for-visual-studio-code/blob/main/images/nunjucks-snippets-in-nunjucks.png?raw=true) |
 | :-------------------------------------------------------------------------------------------------------------------------------: |
 |                                           <strong>Nunjucks Snippets in HTML/Nunjucks 😍</strong>                                           |
 
