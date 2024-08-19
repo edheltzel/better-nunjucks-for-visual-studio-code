@@ -37,7 +37,7 @@ All `.njk` files will default to `html` and provide syntax highlighting for Nunj
 | :------------------------------------------------------------------------------------------------------------------------: |
 |                            <strong>Using Nunjucks with Eleventy + frontmatter support</strong>                             |
 
-| ![nunjucks-grammar](https://user-images.githubusercontent.com/402910/156658952-e3c1f67d-70e6-4042-b30f-b4d6dfcc3cca.png) |
+| ![nunjucks-grammar](https://github.com/edheltzel/better-nunjucks-for-visual-studio-code/blob/main/images/nunjucks-grammar.png?raw=true) |
 | :----------------------------------------------------------------------------------------------------------------------: |
 |                  <strong>Using the Nunjucks grammar also support highlighting and frontmatter</strong>                   |
 
@@ -52,17 +52,14 @@ The reason for the fork is to avoid conflicts and behavior issues when editing `
 <br>
 <br>
 
-| ![nunjucks-snippets-in-markdown](https://user-images.githubusercontent.com/402910/156658997-f1db75da-a276-4428-9acb-ab8f21e84cc3.png) |
+| ![nunjucks-snippets-in-markdown](https://github.com/edheltzel/better-nunjucks-for-visual-studio-code/blob/main/images/nunjucks-snippets-in-markdown.png?raw=true) |
 | :-----------------------------------------------------------------------------------------------------------------------------------: |
 |                                           <strong>Nunjucks Snippets in Markdown 😍</strong>                                           |
 
-| ![nunjucks-snippets-in-html](https://user-images.githubusercontent.com/402910/156658994-b2c229dc-c047-4eb0-92f3-cec90d5f82e5.png) |
+| ![nunjucks-snippets-in-html](https://github.com/edheltzel/better-nunjucks-for-visual-studio-code/blob/main/images/nunjucks-snippets-in-markdown.png?raw=true) |
 | :-------------------------------------------------------------------------------------------------------------------------------: |
-|                                           <strong>Nunjucks Snippets in HTML 😍</strong>                                           |
+|                                           <strong>Nunjucks Snippets in HTML/Nunjucks 😍</strong>                                           |
 
-| ![nunjucks-snippets-in-nunjucks](https://user-images.githubusercontent.com/402910/156659001-d372cf57-5983-48e6-a28a-d7a438374871.png) |
-| :-----------------------------------------------------------------------------------------------------------------------------------: |
-|                                           <strong>Nunjucks Snippets in Nunjucks 😊</strong>                                           |
 
 <h2 id="known-issues">Known Issues</h2>
 
