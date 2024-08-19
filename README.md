@@ -101,7 +101,7 @@ Another "gotcha" is code folding support. You will need to include the below to 
 "editor.foldingStrategy": "indentation"
 ```
 
-![nunjucks-code-folding](https://user-images.githubusercontent.com/402910/156659091-7edf009c-ef0a-4815-af4c-f7c413629e1d.gif)
+![nunjucks-code-folding](https://raw.githubusercontent.com/edheltzel/better-nunjucks-for-visual-studio-code/main/images/code%20folding.gif)
 
 
 <h2 id="todo">TODO</h2>
