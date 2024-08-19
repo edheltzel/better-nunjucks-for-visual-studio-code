@@ -90,7 +90,7 @@ If you need to add HTML comments, the extension provides a couple of options to 
 - Use the `commenthtml` snippet to add an HTML comment line
 - Use Emmet to add an HTML comment block (I set use `ctrl+alt+/` as the shortcut).
 
-![Emmet: Toggle Comment](https://private-user-images.githubusercontent.com/402910/358224187-611421ca-db42-4908-a088-41e700fa03f6.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjM3NDE0MjMsIm5iZiI6MTcyMzc0MTEyMywicGF0aCI6Ii80MDI5MTAvMzU4MjI0MTg3LTYxMTQyMWNhLWRiNDItNDkwOC1hMDg4LTQxZTcwMGZhMDNmNi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwODE1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDgxNVQxNjU4NDNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT05M2Q4MTk5NzhmMjFkMDhlOWQ1NDYyOGFmYWIyMTUwM2Q4ZDRkNmVjMmUwNWQyZWIyYjIxNWI2MzgxZDI0NjgzJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.JYk6GBI1UeW8T_0wMw-8rOZ_sRKHyxIIUrbdsoTIIw4)
+![Emmet: Toggle Comment](https://raw.githubusercontent.com/edheltzel/better-nunjucks-for-visual-studio-code/main/images/emmet-toggle-comment.png)
 
 ### Code Folding
 
