@@ -4,6 +4,10 @@ All notable changes to the "vscode-nunjucks-syntax" extension will be documented
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [v0.3.1]
+
+- updates screenshots and better organization of README file
+
 ## [v0.3.0]
 
 #### Minor release
