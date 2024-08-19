@@ -21,7 +21,7 @@ All `.njk` files will default to `html` and provide syntax highlighting for Nunj
 <br>
 <br>
 
-| ![nunjucks-snippets-in-markdown](https://github.com/edheltzel/better-nunjucks-for-visual-studio-code/blob/main/images/nunjucks-in-markdown.png?raw=true) |
+| ![nunjucks-snippets-in-markdown](https://github.com/edheltzel/better-nunjucks-for-visual-studio-code/blob/main/images/nunjucks-in--markdown.png?raw=true) |
 | :-----------------------------------------------------------------------------------------------------------------------------------: |
 |                                  <strong>Nunjucks inside of Markdown + frontmatter support</strong>                                   |
 
