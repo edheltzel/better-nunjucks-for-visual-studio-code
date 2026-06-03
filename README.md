@@ -4,7 +4,9 @@
 [![release](https://img.shields.io/github/release/edheltzel/better-nunjucks-for-visual-studio-code.svg?style=for-the-badge&logo=github&logoColor=white&colorA=101119&colorB=6D57EF)](https://github.com/edheltzel/better-nunjucks-for-visual-studio-code/releases/latest) [![license](https://img.shields.io/badge/License-MIT-373277.svg?style=for-the-badge&l&logoColor=white&colorA=101119&colorB=42557B)](https://github.com/edheltzel/flightdeck/blob/master/LICENSE)
 </div>
 
-# DO NOT INSTALL v0.3.2 - from Open VSX Registry - this was not published by me
+>[!IMPORTANT]
+>
+> Verion 0.3.2 on Open VSX Registry - this was not published by me has **Malware warnings**
 
 <details open>
   <summary>📔 Table of Contents</summary>
